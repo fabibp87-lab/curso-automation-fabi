@@ -11,6 +11,6 @@ public class P1Estudiante {
         this.promedio =5;
     }
     public P1Estudiante(int id, String nombreCompleto, float promedio){
-        
+
     }
 }
