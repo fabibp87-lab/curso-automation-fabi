@@ -33,7 +33,7 @@ public class P1ArraysYListas {
 
         System.out.println("Elementos en la posicion 0: " + listaDeNombres.get(0));
         System.out.println("Elementos en la posicion 1: " + listaDeNombres.get(1));
-        System.out.println("Elementos en la posicion 1: " + listaDeNombres.get(2));
+        System.out.println("Elementos en la posicion 2: " + listaDeNombres.get(2));
 
         listaDeNombres.remove(1);
         System.out.println("Elementos de la lista actualizada: " + listaDeNombres);
