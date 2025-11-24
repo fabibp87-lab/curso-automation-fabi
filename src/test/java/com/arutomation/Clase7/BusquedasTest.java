@@ -3,6 +3,7 @@ package com.arutomation.Clase7;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -25,14 +26,20 @@ public class BusquedasTest {
 
        //Indica cuanto va a esperar selenium en que abra la pagina.
        options.setPageLoadTimeout(Duration.ofSeconds(60));
-       
 
        //Pasamos las opciones anteriores o sea las instanciamos.
        this.driver = new ChromeDriver(options);
 
        //todo lo anterior es una configuracion basica del driver
 
+   }
 
+   @AfterMethod
+    public void tearDown(){
+       if (driver != null){
+           //driver.close();//close cierra la ventana que se abrio pero no mata la conexion
+           driver.quit();//Mata la conexion y cierra la ventana.
+       }
    }
 
 }
