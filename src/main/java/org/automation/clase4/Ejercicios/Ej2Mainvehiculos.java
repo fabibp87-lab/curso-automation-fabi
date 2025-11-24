@@ -1,4 +1,4 @@
-package org.automation.clase4;
+package org.automation.clase4.Ejercicios;
 
 public class Ej2Mainvehiculos {
     public static void main(String[] args) {

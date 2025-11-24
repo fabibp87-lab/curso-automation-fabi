@@ -1,4 +1,4 @@
-package org.automation.clase4;
+package org.automation.clase4.Ejercicios;
 
 import java.util.ArrayList;
 import java.util.List;

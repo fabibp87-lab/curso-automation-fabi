@@ -1,4 +1,4 @@
-package org.automation.clase4;
+package org.automation.clase4.Ejercicios;
 
 public class Ej2Vehiculos {
     private String marca;
