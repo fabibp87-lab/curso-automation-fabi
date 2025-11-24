@@ -89,4 +89,26 @@ public class BusquedasTest {
 
    }
 
+    @Test
+    public void busqueda2ProductoTest(){
+        //1. Abrir la pagina.
+        driver.get("https://opencart.abstracta.us/");
+
+        By searchInput = By.xpath("//input[@name=\"search\"]");
+        By searchButton = By.xpath("//button[@class=\"btn btn-default btn-lg\"]");
+
+        WebElement searchInputEl = driver.findElement(searchInput);
+        WebElement searchBtnEl = driver.findElement(searchButton);
+
+        searchInputEl.sendKeys("samsung");
+        searchBtnEl.click();
+
+        //3.Verificar el esperado (assertion)
+
+        By titleSearch = By.xpath("//h1[text()=\"Search - iphone\"]");
+        WebElement titleSearchEl = driver.findElement(titleSearch);
+        Assert.assertEquals(titleSearchEl.getText(),"Search - iphone","Los titulos no coinciden");
+
+    }
+
 }
