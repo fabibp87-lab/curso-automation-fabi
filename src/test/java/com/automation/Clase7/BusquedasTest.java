@@ -1,10 +1,8 @@
-package com.arutomation.Clase7;
+package com.automation.Clase7;
 
-import com.arutomation.BaseTest;
+import com.automation.BaseTest;
 import org.automation.pages.HomePage;
 import org.automation.pages.ResultadoDeBusquedaPage;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

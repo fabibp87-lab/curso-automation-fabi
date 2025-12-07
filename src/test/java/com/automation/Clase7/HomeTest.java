@@ -1,6 +1,6 @@
-package com.arutomation.Clase7;
+package com.automation.Clase7;
 
-import com.arutomation.BaseTest;
+import com.automation.BaseTest;
 import org.automation.pages.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;

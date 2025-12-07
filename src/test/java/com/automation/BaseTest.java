@@ -1,18 +1,14 @@
-package com.arutomation.Clase7;
+package com.automation;
 
-import org.automation.pages.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class HomeTestv2 {
-
+public class BaseTest {
     private WebDriver driver;
 
     @BeforeMethod
@@ -33,20 +29,8 @@ public class HomeTestv2 {
         }
     }
 
-    @Test
-    public void validarPaginaInicio(){
-        //Instancia un objeto o sea la clase HomePage
-        HomePage homePage = new HomePage(driver);
-
-
-        //1. Abrir la pagina.
-        driver.get("https://opencart.abstracta.us/");
-
-        //2. Validar elementos de la Home.
-        Assert.assertTrue(homePage.searchIsDisplayed(), "Search input no visible");
-        Assert.assertTrue(homePage.carrouselIsdDisplayed(), "Carrousel no visible");
-        Assert.assertTrue(homePage.navbarIsdDisplayed(), "Navbar no visible");
-        Assert.assertTrue(homePage.myaccountDropdownIsdDisplayed(), "Dowdown no visible");
-
+    public WebDriver getDriver(){
+        return driver;
     }
+
 }

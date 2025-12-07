@@ -11,6 +11,7 @@ public class HomePage extends BasePage {
     private By carrousel = By.xpath("//div[@id=\"slideshow0\"]");
     private By navbar = By.xpath("//nav[@id=\"menu\"]");
     private By myaccountDropdown = By.xpath("//li/a[@title=\"My Account\"]");
+    private By loginDropdown = By.xpath("//li/a[text()=\"Login\"]");
 
     public HomePage(WebDriver driver){
         super(driver);
@@ -39,5 +40,8 @@ public class HomePage extends BasePage {
         sendKeys(searchInput, text);
         click(searchButton);
     }
-
+    public void goToLogin() {
+        click( myaccountDropdown);
+        click(loginDropdown);
+    }
 }
