@@ -9,28 +9,35 @@ import org.testng.annotations.BeforeMethod;
 import java.time.Duration;
 
 public class BaseTest {
+
     private WebDriver driver;
 
     @BeforeMethod
-    public void setup(){
+    public void setup() {
         ChromeOptions options = new ChromeOptions();
 
         options.addArguments("start-maxized");
         options.addArguments("incognito");
+        options.addArguments("--ignore-certificate-errors");
+
+        //options.addArguments("headless");
+
         options.setPageLoadTimeout(Duration.ofSeconds(60));
+
+        // ruta al binario del driver
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver.exe");
+
         this.driver = new ChromeDriver(options);
     }
+
     @AfterMethod
-    public void tearDown(){
-        if (driver != null){
-            //driver.close();//close cierra la ventana que se abrio pero no mata la conexion
-            driver.quit();//Mata la conexion y cierra la ventana.
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
         }
     }
 
-    public WebDriver getDriver(){
+    public WebDriver getDriver() {
         return driver;
     }
-
 }

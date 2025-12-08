@@ -20,7 +20,6 @@ public class BasePage {
 
     public boolean isDisplayed(By locator){
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        //para que controle que este visible el punto anterior.
         return element.isDisplayed();
     }
 

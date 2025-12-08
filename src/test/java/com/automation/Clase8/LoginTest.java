@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class LoginTest extends BaseTest {
 
     @Test
-    public void loginCorrectoTest(){
+    public void loginCorrectoTest() {
         HomePage homePage = new HomePage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());
         MyAccountPage myAccountPage = new MyAccountPage(getDriver());
@@ -18,11 +18,11 @@ public class LoginTest extends BaseTest {
         //1. Abrir la pagina.
         getDriver().get("https://opencart.abstracta.us/");
 
-        //2 y 3 Ingresar al login
+        // 2. y 3 Ingresar al login
         homePage.goToLogin();
 
-        //4. Hacer Login
-        loginPage.login("cesar@gmail.com","123456");
+        // 4. Hacer el login
+        loginPage.login("cesar@gmail.com", "123456");
 
         // 5. Validación
         Assert.assertTrue(myAccountPage.titleIsDisplayed(), "El titulo no es visible");

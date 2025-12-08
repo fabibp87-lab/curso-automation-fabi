@@ -1,4 +1,4 @@
-package org.automation.clase3;
+package org.automation.clase3.Ejercicios;
 
 public class EjMenuv2 {
     public static void main(String[] args) {

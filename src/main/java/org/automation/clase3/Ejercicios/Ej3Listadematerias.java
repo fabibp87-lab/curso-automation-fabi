@@ -1,4 +1,4 @@
-package org.automation.clase3;
+package org.automation.clase3.Ejercicios;
 
 public class Ej3Listadematerias {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.automation.hooks.runner;
+package com.automation.runner;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -7,8 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/features",
         glue = {"com.automation.stepDefinitions", "com.automation.hooks"},
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@TEST-1234"
-
+        tags = "@TEST-1237"
 )
 
 public class CucumberRunnerTest extends AbstractTestNGCucumberTests {

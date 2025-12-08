@@ -14,9 +14,5 @@ public class P2Map {
         System.out.println("Valores del mapa: " +mapaDeNombreYEdades);
         System.out.println("Edad de Pepe: " +mapaDeNombreYEdades.get("Pepe"));
 
-
-
-
-
     }
 }

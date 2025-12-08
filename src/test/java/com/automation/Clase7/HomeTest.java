@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class HomeTest extends BaseTest {
 
     @Test
-    public void validarPaginaInicio(){
+    public void homeElementsTest(){
         //Instancia un objeto o sea la clase HomePage
         HomePage homePage = new HomePage(getDriver());
 
@@ -17,9 +17,9 @@ public class HomeTest extends BaseTest {
 
         //2. Validar elementos de la Home.
         Assert.assertTrue(homePage.searchIsDisplayed(), "Search input no visible");
-        Assert.assertTrue(homePage.carrouselIsdDisplayed(), "Carrousel no visible");
-        Assert.assertTrue(homePage.navbarIsdDisplayed(), "Navbar no visible");
-        Assert.assertTrue(homePage.myaccountDropdownIsdDisplayed(), "Dowdown no visible");
+        Assert.assertTrue(homePage.carrouselIsDisplayed(), "Carrousel no visible");
+        Assert.assertTrue(homePage.navbarIsDisplayed(), "Navbar no visible");
+        Assert.assertTrue(homePage.myAccountDropdownIsDisplayed(), "Dowdown no visible");
 
     }
 }

@@ -1,4 +1,4 @@
-package org.automation.clase3;
+package org.automation.clase3.Ejercicios;
 
 public class Ej1Notas {
     public static void main(String[] args) {
