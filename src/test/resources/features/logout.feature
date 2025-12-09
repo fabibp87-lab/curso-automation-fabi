@@ -1,0 +1,13 @@
+#language: es
+
+@regression
+Característica: Salir de la Cuenta
+
+  @TEST-1239
+  Escenario: Cierre de Sesion
+    Dado que el usuario ingresa a la home
+    Y el usuario ingresa al login
+    Y el usuario se loguea con datos válidos
+    Cuando el usuario Cierra Sesion
+    Entonces el usuario debe ver un mensaje por pantalla
+

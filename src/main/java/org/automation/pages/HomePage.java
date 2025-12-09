@@ -13,6 +13,7 @@ public class HomePage extends BasePage {
     private By loginDropdown = By.xpath("//li/a[text()=\"Login\"]");
     private By registerDropdown = By.xpath("//li/a[text()=\"Register\"]");
 
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -47,4 +48,5 @@ public class HomePage extends BasePage {
         click(myAccountDropdown);
         click(registerDropdown);
     }
+
 }

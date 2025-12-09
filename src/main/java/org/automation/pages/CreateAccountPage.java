@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class CreateAccountPage extends BasePage {
+
     private By firstName = By.id("input-firstname");
     private By lastName = By.id("input-lastname");
     private By email = By.id("input-email");
@@ -12,6 +13,7 @@ public class CreateAccountPage extends BasePage {
     private By confirmPassword = By.id("input-confirm");
     private By checkbox = By.name("agree");
     private By continueBtn = By.xpath("//input[@value=\"Continue\"]");
+    private By msgfirstname = By.xpath("//div[contains(@class, 'text-danger')]");
 
     public CreateAccountPage(WebDriver driver) {
         super(driver);
@@ -32,5 +34,8 @@ public class CreateAccountPage extends BasePage {
         click(checkbox);
 
         click(continueBtn);
+    }
+    public boolean incorrectRegister(){
+        return isDisplayed(msgfirstname);
     }
 }

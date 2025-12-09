@@ -6,6 +6,9 @@ import org.openqa.selenium.WebDriver;
 public class MyAccountPage extends BasePage {
 
     private By title = By.xpath("//h2[text()=\"My Account\"]");
+    private By myAccountDropdown = By.xpath("//li/a[@title=\"My Account\"]");
+    private By logoutDropdown = By.xpath("//li/a[text()=\"Logout\"]");
+
 
     public MyAccountPage(WebDriver driver) {
         super(driver);
@@ -15,4 +18,8 @@ public class MyAccountPage extends BasePage {
         return isDisplayed(title);
     }
 
+    public void goToLogout() {
+        click(myAccountDropdown);
+        click(logoutDropdown);
+    }
 }

@@ -3,6 +3,7 @@ package com.automation.stepDefinitions;
 import com.automation.hooks.Hooks;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.es.Cuando;
+import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import org.automation.pages.LoginPage;
 import org.automation.pages.MyAccountPage;
