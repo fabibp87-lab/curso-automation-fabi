@@ -37,14 +37,4 @@ public class BasePage {
          WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
          element.click();
      }
-
-    public void clickOnLyPresence(By locator) {
-        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        element.click();
-    }
-    /*
-    public void selectOption(By locator){
-        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        element.isSelected();
-    }*/
 }

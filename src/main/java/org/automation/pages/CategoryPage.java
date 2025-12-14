@@ -5,13 +5,13 @@ import org.openqa.selenium.WebDriver;
 
 public class CategoryPage extends BasePage{
 
-    private By selectproduct = By.xpath("//img[contains(@src, 'canon_eos_5d_1-228x228.jpg')]");
+    private By selectProduct = By.xpath("//img[contains(@src, 'canon_eos_5d_1-228x228.jpg')]");
 
     public CategoryPage(WebDriver driver) {
         super(driver);
     }
 
     public void goToProduct(){
-        click(selectproduct);
+        click(selectProduct);
     }
 }

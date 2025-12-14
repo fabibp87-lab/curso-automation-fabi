@@ -3,7 +3,7 @@
 @regression
 Característica: Salir de la Cuenta
 
-  @TEST-1239
+  @TEST-1236
   Escenario: Cierre de Sesion
     Dado que el usuario ingresa a la home
     Y el usuario ingresa al login

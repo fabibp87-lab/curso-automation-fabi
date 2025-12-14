@@ -3,7 +3,7 @@
 @regression
 Característica: Realizar una Compra
 
-  @TEST-1240
+  @TEST-1237
   Escenario: Agregar al Carrito
     Dado que el usuario ingresa a la home
     Y el usuario ingresa al login

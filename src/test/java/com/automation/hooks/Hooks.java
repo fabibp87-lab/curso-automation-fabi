@@ -52,7 +52,6 @@ public class Hooks {
 
         options.setPageLoadTimeout(Duration.ofSeconds(60));
 
-        // ruta al binario del driver
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver.exe");
 
         return new ChromeDriver(options);

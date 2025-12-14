@@ -3,14 +3,14 @@
 @regression
 Característica: Login
 
-  @TEST-1236
+  @TEST-1232
   Escenario: Login correcto
     Dado que el usuario ingresa a la home
     Y el usuario ingresa al login
     Cuando el usuario se loguea con datos válidos
     Entonces se verifica que el usuario se logueo correctamente
 
-  @TEST-1237
+  @TEST-1233
   Escenario: Login incorrecto
     Dado que el usuario ingresa a la home
     Y el usuario ingresa al login

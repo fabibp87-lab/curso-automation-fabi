@@ -41,8 +41,8 @@ public class CreateAccountDefinitions {
 
     }
 
-    @Entonces("se verifica que la cuenta se creo incorrectamente")
-    public void seVerificaQueLaCuentaSeCreoIncorrectamente() {
+    @Entonces("se verifica que la cuenta no se creo")
+    public void seVerificaQueLaCuentaNoSeCreo() {
         Assert.assertTrue(createAccountPage.incorrectRegister());
     }
 

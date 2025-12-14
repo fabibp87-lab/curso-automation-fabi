@@ -22,6 +22,4 @@ public class CartPage extends BasePage{
     public boolean isBtnVisible(){
         return isDisplayed(btnContinueShopping);
     }
-
-
 }

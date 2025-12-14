@@ -25,7 +25,6 @@ public class HomeDefinitions {
 
     @Entonces("la pantalla de la home se muestra correctamente")
     public void laPantallaDeLaHomeSeMuestraCorrectamente() {
-        // 2. Validar elementos de la home
         Assert.assertTrue(homePage.searchIsDisplayed(), "Search input no visible");
         Assert.assertTrue(homePage.carrouselIsDisplayed(), "Carrousel no visible");
         Assert.assertTrue(homePage.navbarIsDisplayed(), "Navbar no visible");
