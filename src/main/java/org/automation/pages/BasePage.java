@@ -42,5 +42,9 @@ public class BasePage {
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         element.click();
     }
-
+    /*
+    public void selectOption(By locator){
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        element.isSelected();
+    }*/
 }

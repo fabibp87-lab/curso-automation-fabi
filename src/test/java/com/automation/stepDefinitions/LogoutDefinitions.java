@@ -26,8 +26,8 @@ public class LogoutDefinitions {
         myAccountPage.goToLogout();
     }
 
-    @Entonces("el usuario debe ver un mensaje por pantalla")
-    public void elUsuarioDebeVerUnMensajePorPantalla() {
+    @Entonces("se verifica que muestra un mensaje")
+    public void seVerificaQueMuestraUnMensaje() {
        Assert.assertTrue(logoutPage.messageIsDisplayed());
     }
 

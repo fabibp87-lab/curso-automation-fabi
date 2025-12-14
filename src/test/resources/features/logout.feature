@@ -9,5 +9,5 @@ Característica: Salir de la Cuenta
     Y el usuario ingresa al login
     Y el usuario se loguea con datos válidos
     Cuando el usuario Cierra Sesion
-    Entonces el usuario debe ver un mensaje por pantalla
+    Entonces se verifica que muestra un mensaje
 
