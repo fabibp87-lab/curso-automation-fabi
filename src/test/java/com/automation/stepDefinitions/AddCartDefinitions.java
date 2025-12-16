@@ -31,8 +31,8 @@ public class AddCartDefinitions {
         selectProduct.goToProduct();
     }
 
-    @Y("el usuario carga en el carrito el producto")
-    public void elUsuarioCargaEnElCarritoElProducto() {
+    @Y("el usuario carga el producto")
+    public void elUsuarioCargaElProducto() {
         addProduct.selectOption("3");
     }
 

@@ -10,5 +10,5 @@ Característica: Realizar una Compra
     Y el usuario se loguea con datos válidos
     Cuando el usuario selecciona un producto
     Y el usuario ingresa al producto
-    Y el usuario carga en el carrito el producto
+    Y el usuario carga el producto
     Entonces se verifica que el producto se cargo
