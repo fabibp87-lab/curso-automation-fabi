@@ -1,7 +1,6 @@
 package com.automation.stepDefinitions;
 
 import com.automation.hooks.Hooks;
-import io.cucumber.java.PendingException;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Entonces;
 import org.apache.commons.lang.RandomStringUtils;

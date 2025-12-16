@@ -11,12 +11,11 @@ import org.automation.pages.MyAccountPage;
 import org.testng.Assert;
 
 public class LogoutDefinitions {
-    private LoginPage loginPage;
+
     private MyAccountPage myAccountPage;
     private LogoutPage logoutPage;
 
     public LogoutDefinitions() {
-        this.loginPage = new LoginPage(Hooks.getDriver());
         this.myAccountPage = new MyAccountPage(Hooks.getDriver());
         this.logoutPage = new LogoutPage(Hooks.getDriver());
     }
